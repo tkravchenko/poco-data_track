@@ -33,3 +33,12 @@
 - Quartile 2: The median of the data.
 - Quartile 1: The smallest values 25% of the data.
 - A useful statistic computed from the quartiles is the "interquartile range" (IQR), which lies between the Q1 and Q3 and represents the middle 50% of the data.
+
+# Standardizing data
+1. Why standardize?
+- variables are measured on different scales. For example, height might be measured in feet, while weight might be measured in pounds. 
+- harder to compare
+- may lead you to misinterpret the importance of a particular column 
+- The solution: standardize your data so that all your variables are on the same scale.
+
+2. In statistics, standardization centers a dataset's distribution around the mean of the data and calculates the number of standard deviations away from the mean each point is. You can standardize your data **by calculating z-scores**, also known as standard scores. Z-scores are an extension of what you've already seen in this chapter. To calculate the z-score of a data point, subtract the mean and divide by the standard deviation.
