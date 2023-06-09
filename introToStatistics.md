@@ -42,3 +42,16 @@
 - The solution: standardize your data so that all your variables are on the same scale.
 
 2. In statistics, standardization centers a dataset's distribution around the mean of the data and calculates the number of standard deviations away from the mean each point is. You can standardize your data **by calculating z-scores**, also known as standard scores. Z-scores are an extension of what you've already seen in this chapter. To calculate the z-score of a data point, subtract the mean and divide by the standard deviation.
+
+________________________________________________________________________________________________
+# Chapter 2
+# Visualizing distribution
+1. **Standard distribution**:
+ - In both cases, the highest point is in the middle of the distribution. Put another way, the most frequent value is the highest point. 
+ - The curve here is symmetrical meaning it flows to either side of the point. 
+ - The resulting shape is similar to a bell so this distribution is often called a bell curve. In fact, a bell curve is so common it is technically called the "normal distribution".
+ - As a result, not only is the distribution centered at the mean, median and mode but the frequencies of these values decrease symmetrically so other summary stats are affected like quartiles and standard deviations.
+
+2. Other distributions:
+- So in a **"skewed"** distribution, these values will differ, unlike the normal or symmetrical distribution where mean and median are very close. As you get more familiar with summary statistics you'll be able to spot a non-normal distribution by reviewing the stats instead of in a histogram.
+- These aspects, leaning & trailing off, are measured in "skew" and "kurtosis". In sheets use `skew` &`kurt` along with the data range to get leaning and trailing off statistics.Перекос/Эксцесс
