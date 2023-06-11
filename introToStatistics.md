@@ -95,3 +95,59 @@ A **sample** is a subset of the population's observations. It is meant to repres
  **"Large enough"** is vague. The sample size is impacted by:
 - How accurate you need to be. Since a sample is a representation, the resulting stats will be approximate. If you need a high degree of certainty, you will need more samples to more closely resemble the population.
 - The more closely the population follows a normal distribution, the fewer sample points will be required.
+
+# Hypothesis Testing
+
+A **hypothesis** is a *testable* claim. Stating that the price of a Ferrari is high, isn't testable. This is because "high" isn't defined. To make it testable you could state a hypothesis such as the average Ferrari price is higher than the average sports car price.
+
+Types of hypothesis:
+- NULL: 
+    - short from NULLIFY; 
+    - This is because your statistical test seeks **to NULLify or reject**, the statement;
+    - H0;
+    - n stats lingo you REJECT the NULL hypothesis.  
+- alternate:
+    - he alternate hypothesis is the challenger statement meaning everything else not represented in the NULL hypothesis.
+    - H1;
+    - n stats, you would say "Fail to reject the null hypothesis" That is, the status quo holds up given your data.
+
+**T-test**:
+- To further avoid subjectivity, hypothesis testing uses a test statistic to measure the H0 validity;
+- The t-Test produces a p-value. You have to predetermine **a p-value cutoff for your test**. This means you want to have a probability of say 1% or 5% that the results are an error. 
+- Use a p-value of 5% in most cases;
+- If the probability **is less than the cutoff, 5%,** then you will **"REJECT the Null Hypothesis"** and conclude there *is* a difference between the samples. 
+
+In sheets calculate the p-value with "t_dot_test". It accepts range1, range2 followed by the number of tails being tested & type of test:
+- T.TEST(range1, range2, tails, type)
+- If you're testing whether the difference is *only* greater than or *only* less than, the t.test has 1 tail. 
+- In our case, the H0 operator is equals. So values can be above *or* below the mean. Thus the test has 2 tails in either direction from mean. 
+- Next, if you measure the same observations at different times, the type equals 1. 
+- If you measure different observations with the same variance the type is 2. 
+- And to be the most strict if you measure different observations with different variances, then use type 3.
+- The t-test uses the same subjects in the morning & evening. So it's a "paired" type known as 1.
+
+# Hypothesis Testing with the Z-test
+Z-test:
+- Similarly a **Z-test** will give you a probability that two dataset averages are different.
+- Like before, you need to predetermine a cutoff value which guides your experiment results. More specifically, in both z and t-tests, you reject the null hypothesis if the value is less than the cutoff, usually 0 point 05.
+-  you would use a t-test if your sample is less than 30 and if not, then a z-test.
+- Z.TEST()
+- Let's pretend you didn't know the outcome of the last exercise. Now you want to determine if the sample worker salary is equal to the population's. The NULL hypothesis operator changes to = .
+- This means you are testing whether the sample average is statistically above or below the average. As a result, the experiement is testing in 2 directions from the mean, so it's a two-tailed test.
+- If you have a**two-tailed test** you must **multiple the Z.TEST() results by 2**.
+
+# Hypothesis Testing with the Chi-squared test
+
+**Chi-squared test**:
+- comparing samples for meaningful differences;
+- ex: did the treatment actually work?
+- When you have prior observations and a new sample you are left with two choices...the difference in the new group stems from random sampling variations OR that there is in fact a meaningful difference. 
+
+For a **Chi-squared test**:
+- data has to be in groups(e.g.: old treatment, new treatment);
+- avoid really small expected values(<5)
+- chitest(observed_range, expacted_range)
+- In this case, both ranges must have the same COUNT() or the formula will fail. The formula returns the p-value you will use to determine whether or not to reject the null hypothesis.
+- The previous CHITEST() experiment had equal expected probabilities. However, it is often the case that there are multiple states of an experiment, referred to as **degrees of freedom**.
+------------------------------------------------------------------------------------------------------
+# Chapter 4 Case Study: Dating Profile Analysis
