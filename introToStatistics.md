@@ -69,3 +69,13 @@ Spreadsheets have 3 formulas for calculating the y-intercept and slope given two
 - SLOPE() - will return the slope of a trend line or linear regression representing the linear change in one unit to another.//нахил
 - INTERCEPT() - returns the value where the trendline will intersect the y-axis.
 - LINEST() - calculates both the slope & the intercept of two variables using the least-squares method.
+
+# Bar charts
+Types of data:
+- numeric;
+- categorigal => use bar charts to visualize.
+
+Types of bar charts:
+- **Stacked**: helps you focus on the proportion of the total that is a particular class. You will visually understand the amount of the total that represents competitive online auctions.
+- **Side-by-side**: lets the audience understand the values in relation to each other. You will visually interpret how similar each class values are
+![Alt text](image-1.png)
