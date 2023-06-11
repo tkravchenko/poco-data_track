@@ -1,3 +1,4 @@
+# Chapter 1
 # Average
 1. A **mean** is the sum of all observations in your population or sample divided by the number of observations in that population or sample.
 *Example:*
@@ -78,4 +79,19 @@ Types of data:
 Types of bar charts:
 - **Stacked**: helps you focus on the proportion of the total that is a particular class. You will visually understand the amount of the total that represents competitive online auctions.
 - **Side-by-side**: lets the audience understand the values in relation to each other. You will visually interpret how similar each class values are
-![Alt text](image-1.png)
+
+________________________________________________________________________________________________
+# Chapter 3 Statistical Hypothesis Testing
+# Central to Stats: Sampling!
+
+In stats, a **population** is defined as an *entire* distribution of similar observations or events. Suppose you want to know how everyone riding trains feels about a rate hike. You could ask the *entire* population but this could be costly & time consuming. As a result, more often statisticians work with data samples.
+
+A **sample** is a subset of the population's observations. It is meant to represent the characteristics of the population. As your sample increases, the statistical information will more closely approximate the population's stats.
+
+**Central Limit Theorem (CLT)** :If a sample size from an independent, random variable is **large enough** then the sampling distribution will be normal or nearly normal.
+
+ For some practical inferential statisticians, if the underlying population is normal they would say **a sample of 30 to 40** would be sufficient to make inferences about the population.
+
+ **"Large enough"** is vague. The sample size is impacted by:
+- How accurate you need to be. Since a sample is a representation, the resulting stats will be approximate. If you need a high degree of certainty, you will need more samples to more closely resemble the population.
+- The more closely the population follows a normal distribution, the fewer sample points will be required.
