@@ -55,3 +55,17 @@ ________________________________________________________________________________
 2. Other distributions:
 - So in a **"skewed"** distribution, these values will differ, unlike the normal or symmetrical distribution where mean and median are very close. As you get more familiar with summary statistics you'll be able to spot a non-normal distribution by reviewing the stats instead of in a histogram.
 - These aspects, leaning & trailing off, are measured in "skew" and "kurtosis". In sheets use `skew` &`kurt` along with the data range to get leaning and trailing off statistics.Перекос/Эксцесс
+
+# Visualiying correlations
+
+Its named **scatterplot** because each dot represents a row in your data and the points often appear to be scattered along the coordinates. A scatterplot is great because your brain can identify patterns among the two variables.
+
+Recall that **correlation**, which you can calculate using CORREL(), ranges between -1 and 1.
+- 0 correlation means there is no relationship between variables.
+- Positive correlation indicate that as one variable increases, the other also increases.
+- Negative correlation values signify that as one variable increases, the other decreases.
+
+Spreadsheets have 3 formulas for calculating the y-intercept and slope given two variables.
+- SLOPE() - will return the slope of a trend line or linear regression representing the linear change in one unit to another.//нахил
+- INTERCEPT() - returns the value where the trendline will intersect the y-axis.
+- LINEST() - calculates both the slope & the intercept of two variables using the least-squares method.
