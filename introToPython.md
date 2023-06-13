@@ -117,4 +117,44 @@ Subsetting Lists:
 - from numpy import array; array([1, 2, 3])
 - pi => math.pi
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Chapter 4 NumPy
+
+**NumPy**:
+- Numeric Python 
+- Alternative to Python List: NumPy Array
+- Calculations over entire arrays
+- Easy and Fast
+- InstallationIn the terminal: pip3 install numpy
+- bmi => array([21.85171573, 20.97505669, 21.75028214, 24.7473475 , 21.44127836])
+    - bmi[1] 20.975
+    - bmi > 23 => array([False, False, False,  True, False])
+    - bmi[bmi > 23] => array([24.7473475])
+- First of all, numpy arrays cannot contain elements with different types. If you try to build such a list, some of the elements' types are changed to end up with a homogeneous list. This is known as type coercion.
+
+**2D NumPy Arrays**:
+- np_2d = np.array([[1.73, 1.68, 1.71, 1.89, 1.79],[65.4, 59.2, 63.6, 88.4, 68.7]])
+    - np_2darray([[ 1.73,  1.68,  1.71,  1.89,  1.79],       [65.4 , 59.2 , 63.6 , 88.4 , 68.7 ]])
+    - np_2d.shape => (2, 5) # 2 rows, 5 columns
+    - .shape is atribute not a method ! it doesn't have ()
+    - np_2d[0][2] => 1.71
+
+**Basic Statistics**:
+- np.mean()
+- np.median()
+- np.std()
+- np.corrcoef()
+- sum()
+- sort()
+
+**Generate data**:
+- Generate data
+    - Arguments for np.random.normal():
+        - distribution mean
+        - distribution standard deviation
+        - number of samples
+        - height = np.round(np.random.normal(1.75, 0.20, 5000), 2) 
+        - weight = np.round(np.random.normal(60.32, 15, 5000), 2) 
+        - np_city = np.column_stack((height, weight))
 
