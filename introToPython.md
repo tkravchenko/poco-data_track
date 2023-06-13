@@ -61,3 +61,60 @@ Subsetting Lists:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Chapter 3 Functions and packages
+
+**Functions**:
+- Nothing new!
+- type()
+- Piece of reusable code
+- Solves particular task
+- Call function instead of writing code yourself
+- max()
+- round(number, percision ~ ndigits)
+- help(round) => get description
+- In IPython specifically, you can also use ? before the function name.
+- print()
+- str(), int(), float(), bool()
+- The general recipe for **calling functions** and saving the result to a variable is thus: output = function_name(input)
+- len() => get the length of the list
+- pow(x, y, z): x	A number, the base; y	A number, the exponent; z	Optional. A number, the modulus;
+- You'll see that **sorted()** takes three arguments: iterable, key, and reverse
+    - iterable	Required. The sequence to sort, list, dictionary, tuple etc.
+    - key	Optional. A Function to execute to decide the order. Default is None
+    - reverse	Optional. A Boolean. False will sort ascending, True will sort descending. Default is False.
+
+**Methods**:
+- string, float, list **are objects**
+- **Methods** - functions that belong to python objects
+- fam['liz', 1.73, 'emma', 1.68, 'mom', 1.71, 'dad', 1.89]
+    - fam.index("mom") # "Call method index() on fam" => 4
+    - fam.count(1.73) - how many time 1.73 occurs in the list => 1
+    - sister 'liz' 
+    - sister.capitalize()'Liz'
+    - sister.replace("z", "sa") =>'lisa'
+    - fam.append("me") => fam['liz', 1.73, 'emma', 1.68, 'mom', 1.71, 'dad', 1.89, 'me']
+    - fam.append(1.79) => fam['liz', 1.73, 'emma', 1.68, 'mom', 1.71, 'dad', 1.89, 'me', 1.79]
+-  upper() method does not change the object(str) it is called on. 
+- Most **list methods will change the list** they're called on. Examples are:
+    - append(), that adds an element to the list it is called on,
+    - remove(), that removes the first element of a list that matches the input, and
+    - reverse(), that reverses the order of the elements in the list it is called on.
+
+**Packages**:
+- Directory of Python Scripts
+- Each script = module
+- Specify functions, methods,types
+- Thousands of packages available 
+    - NumPy
+    - Matplotlib
+    - scikit-learn
+
+**Install packagehttp**:
+- //pip.readthedocs.org/en/stable/installing/
+- Download get-pip.py
+- Terminal:python3 get-pip.py
+- pip3 install numpy
+- import numpy as np; np.array([1, 2, 3])
+- from numpy import array; array([1, 2, 3])
+- pi => math.pi
+
+
