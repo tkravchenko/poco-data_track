@@ -44,4 +44,24 @@
     - Change the opacity of the bubbles by setting the alpha argument to 0.8 inside plt.scatter(). Alpha can be set from zero to one, where zero is totally transparent, and one is not at all transparent.
     - If you have another look at the script, under # Additional Customizations, you'll see that there are two **plt.text()** functions now. They add the words "India" and "China" in the plot.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Dictionaries 
+
+**Dictionaries**:
+- world = {"afghanistan":30.55, "albania":2.77, "algeria":39.21} - key-value pairs
+- world["albania"] => 2.77
+- my_dict = {
+   "key1":"value1",
+   "key2":"value2",
+ }
+- **Check out which keys** are in europe by calling the **keys() method** on europe. Print out the result.
+- keys have to be unique
+- Keys have to be "immutable" objects
+- **update a value** world["sealand"] = 0.000028
+- **delate a value** by refering to key del(world["sealand"])
+- Indexed by unique keys
+- Lookup table withunique keys
+- print('italy' in europe) **access an el in dictionary**
+- Remember lists? They could contain anything, even other lists. Well, for dictionaries the same holds. *Dictionaries can contain key:value pairs where the values are again dictionaries.*
+- It's perfectly possible to chain square brackets to select elements. To fetch the population for Spain from europe, for example, you need: **europe['spain']['population']**

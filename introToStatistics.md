@@ -151,3 +151,9 @@ For a **Chi-squared test**:
 - The previous CHITEST() experiment had equal expected probabilities. However, it is often the case that there are multiple states of an experiment, referred to as **degrees of freedom**.
 ------------------------------------------------------------------------------------------------------
 # Chapter 4 Case Study: Dating Profile Analysis
+
+# Dating Data!
+
+- To get a percent of non-drinkers, you first need to use COUNTIF. COUNTIF accepts the data to review and only tallies cells when a condition is true. This example counts spreadsheet cells from A1:A10 only when the value is less than 3. Once tallied, this number is divided by the number of observations to arrive at the percent of the total where the condition is true.
+- Remember, a z-score is the number of standard deviations from the mean and is calculated by subtracting the mean from the data point (in this case, the maximum), and dividing by the standard deviation.
+-Remember, a histogram is a series of rectangles whose size is proportional to the frequency of records in the bin or interval. It’s not the same as a bar chart!
